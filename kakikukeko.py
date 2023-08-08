@@ -14,3 +14,7 @@ options = st.multiselect('What are your favorite colors',
 st.write('You selectedee:', options)
 
 st.map()
+
+with open("merosu.txt") as f:
+    text = f.read()
+text_model = markovify.Text(text)
