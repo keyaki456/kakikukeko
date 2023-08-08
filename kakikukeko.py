@@ -8,7 +8,7 @@ else:
 options = st.multiselect(
 'What are your favorite colors',
 ['Green', 'Yellow', 'Red', 'Blue', 'black', 'orange'],
-['Yellow', 'Red', 'black'])
+['Yellow', 'Red'])
 
 st.write('You selected:', options)
 
