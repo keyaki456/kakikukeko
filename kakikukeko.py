@@ -11,3 +11,5 @@ options = st.multiselect(
 ['Yellow', 'Red', 'black'])
 
 st.write('You selected:', options)
+
+st.map()
