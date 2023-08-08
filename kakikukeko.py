@@ -19,12 +19,10 @@ translator = Translator()
 
 with open("merosu.txt") as f:
     text = f.read()
-    text_model = markovify.Text(text)
+    text_model = markovify.Text(text, state_size=3)
 for a in range(10):
     texten = text_model.make_sentence()
     textja = translator.translate(texten, dest="ja").text
     st.write("~~")
     st.write(texten)
     st.write(textja)
-
-st.write("ああああ")
