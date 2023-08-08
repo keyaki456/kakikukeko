@@ -17,4 +17,6 @@ st.map()
 
 with open("merosu.txt") as f:
     text = f.read()
-text_model = markovify.Text(text)
+    text_model = markovify.Text(text)
+
+st.write(text_model.make_sentence())
