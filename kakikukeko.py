@@ -2,20 +2,9 @@ import streamlit as st
 import markovify
 from googletrans import Translator
 
-if st.button('Say hello'):
-    st.write('Why hello there')
-else:
-    st.write('Goodbye')
-
-options = st.multiselect('What are your favorite colors',
-['Green', 'Yellow', 'Red', 'Blue', 'black', 'orange'],
-['Yellow', 'Red'])
-
-st.write('You selectedee:', options)
-
-st.map()
-
 translator = Translator()
+
+st.write("MtGのフレーバーテキストをマルコフ連鎖でﾓﾁｮﾓﾁｮして新しいフレーバーテキストを作ってgoogle翻訳で日本語にする")
 
 with open("merosu.txt") as f:
     text = f.read()
