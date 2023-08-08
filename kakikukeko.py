@@ -1,5 +1,5 @@
 import streamlit as st
-#import markovify
+import markovify
 #import MeCab
 
 if st.button('Say hello'):
