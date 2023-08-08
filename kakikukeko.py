@@ -5,8 +5,7 @@ if st.button('Say hello'):
 else:
     st.write('Goodbye')
 
-options = st.multiselect(
-'What are your favorite colors',
+options = st.multiselect('What are your favorite colors',
 ['Green', 'Yellow', 'Red', 'Blue', 'black', 'orange'],
 ['Yellow', 'Red'])
 
