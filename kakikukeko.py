@@ -23,6 +23,7 @@ with open("merosu.txt") as f:
 for a in range(10):
     texten = text_model.make_sentence()
     textja = translator.translate(texten, dest="ja").text
+    st.write("~~")
     st.write(texten)
     st.write(textja)
 
