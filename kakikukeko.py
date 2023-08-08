@@ -25,6 +25,6 @@ st.write("ああああ")
 
 translator = Translator()
 text_en = text_model.make_sentence()
-text_ja = translator.translate(text_en, src='en', dest='ja').text
+text_ja = translator.translate(text_en, src='en', dest='ja')
 
 st.write(text_ja)
