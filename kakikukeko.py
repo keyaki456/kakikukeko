@@ -20,3 +20,11 @@ with open("merosu.txt") as f:
     text_model = markovify.Text(text)
 for a in range(10):
     st.write(text_model.make_sentence())
+
+st.write("ああああ")
+
+translator = Translator()
+text_en = text_model.make_sentence()
+text_ja = translator.translate(text_en, src='en', dest='ja').text
+
+print(text_ja) 
