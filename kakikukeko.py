@@ -1,6 +1,6 @@
 import streamlit as st
 import markovify
-#import MeCab
+from googletrans import Translator
 
 if st.button('Say hello'):
     st.write('Why hello there')
