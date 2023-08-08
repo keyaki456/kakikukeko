@@ -1,1 +1,3 @@
 git+https://github.com/jsvine/markovify
+git+https://github.com/markovify
+markovify

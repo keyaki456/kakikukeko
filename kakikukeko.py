@@ -17,7 +17,7 @@ st.map()
 
 with open("merosu.txt") as f:
     text = f.read()
-    text_model = markovify.Text(text, state_size=3)
+    text_model = markovify.Text(text)
 for a in range(10):
     syuturyoku = text_model.make_sentence()
     st.write(syuturyoku)
