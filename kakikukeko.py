@@ -19,8 +19,8 @@ translator = Translator()
 
 with open("merosu.txt") as f:
     text = f.read()
-    text_model = markovify.Text(text, state_size=3)
-for a in range(10):
+    text_model = markovify.Text(text)
+for a in range(20):
     texten = text_model.make_sentence()
     textja = translator.translate(texten, dest="ja").text
     st.write("~~")
