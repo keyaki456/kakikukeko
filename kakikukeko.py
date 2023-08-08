@@ -1,4 +1,6 @@
 import streamlit as st
+import markovify
+import MeCab
 
 if st.button('Say hello'):
     st.write('Why hello there')
