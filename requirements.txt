@@ -1,1 +1,1 @@
-markovify
+git+https://github.com/markovify
