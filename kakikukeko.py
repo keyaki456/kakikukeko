@@ -15,16 +15,15 @@ st.write('You selectedee:', options)
 
 st.map()
 
+translator = Translator()
+
 with open("merosu.txt") as f:
     text = f.read()
     text_model = markovify.Text(text)
 for a in range(10):
-    st.write(text_model.make_sentence())
+    texten = text_model.make_sentence()
+    textja = translator.translate(texten, dest="ja").text
+    st.write(texten)
+    st.write(textja)
 
 st.write("ああああ")
-
-translator = Translator()
-text_en = text_model.make_sentence()
-text_ja = translator.translate(text_en, src='en', dest='ja')
-
-st.write(text_ja)
