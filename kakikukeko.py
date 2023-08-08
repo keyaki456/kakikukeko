@@ -19,4 +19,5 @@ with open("merosu.txt") as f:
     text = f.read()
     text_model = markovify.Text(text, state_size=3)
 for a in range(10):
-    st.write(text_model.make_sentence())
+    syuturyoku = text_model.make_sentence()
+    st.write(syuturyoku)
