@@ -15,7 +15,7 @@ st.write('You selectedee:', options)
 
 st.map()
 
-with open("merosu.txt") as f:
+with open("syuturyoku.txt") as f:
     text = f.read()
     text_model = markovify.Text(text)
 
