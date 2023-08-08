@@ -15,8 +15,8 @@ st.write('You selectedee:', options)
 
 st.map()
 
-with open("/Users/keyaki/Desktop/kakikukeko/merosu.txt") as f:
+with open("merosu.txt") as f:
     text = f.read()
-    text_model = markovify.Text(text)
-
-st.write(text_model.make_sentence())
+    text_model = markovify.Text(text, state_size=3)
+for a in range(10):
+    st.write(text_model.make_sentence())
